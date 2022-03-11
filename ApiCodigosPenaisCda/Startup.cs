@@ -1,3 +1,7 @@
+using Business.InterfaceCriminalCode;
+using Business.InterfaceGenerica;
+using Data.CriminalCodeRepositorio;
+using Data.RepositorioGenerico;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,6 +30,8 @@ namespace ApiCodigosPenaisCda
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddSingleton(typeof(IGeneric<>), typeof(RepositoryGenerics<>));
+            services.AddSingleton<ICriminalCode, RepositorioCriminalCode>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

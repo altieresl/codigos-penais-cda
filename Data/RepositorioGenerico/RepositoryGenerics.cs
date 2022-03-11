@@ -13,7 +13,6 @@ namespace Data.RepositorioGenerico
 {
     public class RepositoryGenerics<T> : IGeneric<T>, IDisposable where T : class
     {
-        private IntPtr handle;
         private Component component = new Component();
         private bool disposed = false;
 
@@ -83,20 +82,10 @@ namespace Data.RepositorioGenerico
                     component.Dispose();
                 }
 
-                // Call the appropriate methods to clean up
-                // unmanaged resources here.
-                // If disposing is false,
-                // only the following code is executed.
-                CloseHandle(handle);
-                handle = IntPtr.Zero;
-
                 // Note disposing has been done.
                 disposed = true;
             }
         }
-
-        [System.Runtime.InteropServices.DllImport("Kernel32")]
-        private extern static Boolean CloseHandle(IntPtr handle);
 
     }
 }

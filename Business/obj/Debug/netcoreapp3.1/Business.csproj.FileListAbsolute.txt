@@ -1,0 +1,13 @@
+C:\Users\Altieres\Documents\Processo Seletivo\ApiCodigosPenaisCda\Business\bin\Debug\netcoreapp3.1\Business.deps.json
+C:\Users\Altieres\Documents\Processo Seletivo\ApiCodigosPenaisCda\Business\bin\Debug\netcoreapp3.1\Business.dll
+C:\Users\Altieres\Documents\Processo Seletivo\ApiCodigosPenaisCda\Business\bin\Debug\netcoreapp3.1\Business.pdb
+C:\Users\Altieres\Documents\Processo Seletivo\ApiCodigosPenaisCda\Business\bin\Debug\netcoreapp3.1\Model.dll
+C:\Users\Altieres\Documents\Processo Seletivo\ApiCodigosPenaisCda\Business\bin\Debug\netcoreapp3.1\Model.pdb
+C:\Users\Altieres\Documents\Processo Seletivo\ApiCodigosPenaisCda\Business\obj\Debug\netcoreapp3.1\Business.csproj.AssemblyReference.cache
+C:\Users\Altieres\Documents\Processo Seletivo\ApiCodigosPenaisCda\Business\obj\Debug\netcoreapp3.1\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Altieres\Documents\Processo Seletivo\ApiCodigosPenaisCda\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfoInputs.cache
+C:\Users\Altieres\Documents\Processo Seletivo\ApiCodigosPenaisCda\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfo.cs
+C:\Users\Altieres\Documents\Processo Seletivo\ApiCodigosPenaisCda\Business\obj\Debug\netcoreapp3.1\Business.csproj.CoreCompileInputs.cache
+C:\Users\Altieres\Documents\Processo Seletivo\ApiCodigosPenaisCda\Business\obj\Debug\netcoreapp3.1\Business.csproj.CopyComplete
+C:\Users\Altieres\Documents\Processo Seletivo\ApiCodigosPenaisCda\Business\obj\Debug\netcoreapp3.1\Business.dll
+C:\Users\Altieres\Documents\Processo Seletivo\ApiCodigosPenaisCda\Business\obj\Debug\netcoreapp3.1\Business.pdb

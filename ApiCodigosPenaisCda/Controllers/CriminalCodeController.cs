@@ -19,12 +19,14 @@ namespace ApiCodigosPenaisCda.Controllers
         }
 
         [HttpGet("GetCriminalCodes")]
-        public async Task<List<CriminalCodeViewModel>> GetCriminalCodes()
+        public async Task<List<CriminalCodeViewModel>> GetCriminalCodes(string ? order)
         {
+            if (order != null && order != "")
+                return await _ICriminalCode.List(order);
             return await _ICriminalCode.List();
         }
 
-        [HttpPost("GetCriminalCode")]
+        [HttpGet("GetCriminalCode")]
         public async Task<CriminalCodeViewModel> GetCriminalCode(int id)
         {
             return await _ICriminalCode.GetEntityById(id);

@@ -12,5 +12,7 @@ namespace Business.InterfaceGenerica
         Task Update(T Objeto);
         Task<T> GetEntityById(int Id);
         Task<List<T>> List();
+
+        Task<List<T>> List(string order);
     }
 }

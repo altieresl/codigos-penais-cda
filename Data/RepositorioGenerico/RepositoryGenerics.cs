@@ -87,5 +87,9 @@ namespace Data.RepositorioGenerico
             }
         }
 
+        public Task<List<T>> List(string order)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

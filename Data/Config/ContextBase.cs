@@ -23,7 +23,7 @@ namespace Data.Config
             }
         }
 
-        public DbSet<CriminalCodeViewModel> ProdutoViewModel { get; set; }
+        public DbSet<CriminalCodeViewModel> CriminalCodeViewModel { get; set; }
 
         private string GetStringConnectionConfig()
         {

@@ -27,7 +27,7 @@ namespace Data.Config
 
         private string GetStringConnectionConfig()
         {
-            string connectionString = "server=localhost;database=codigo_penal_cda;uid=root;password=%COD_penal;cda2;";
+            string connectionString = "Server=localhost;Database=codigo_penal_cda;Uid=root;Password='%COD_penal;cda2';";
             return connectionString;
         }
     }

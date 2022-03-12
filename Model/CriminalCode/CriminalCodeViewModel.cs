@@ -24,30 +24,30 @@ namespace Model.CodigoPenal
 
         [Column("Penalty")]
         [Display(Name = "Penalty")]
-        public string Penalty{ get; set; }
+        public decimal Penalty{ get; set; }
 
         [Column("PrisionTime")]
         [Display(Name= "PrisionTime")]
-        public string PrisionNTime { get; set; }
+        public int PrisionTime { get; set; }
 
         [Column("StatusId")]
         [Display(Name = "StatusId")]
-        public string StatusId { get; set; }
+        public int StatusId { get; set; }
 
         [Column("CreateDate")]
         [Display(Name = "CreateDate")]
-        public string CreateDate { get; set; }
+        public DateTime CreateDate { get; set; }
 
         [Column("UpdateDate")]
         [Display(Name = "UpdateDate")]
-        public string UpdateDate { get; set; }
+        public DateTime? UpdateDate { get; set; }
 
         [Column("CreateUserId")]
         [Display(Name = "CreateUserId")]
-        public string CreateUserId { get; set; }
+        public int CreateUserId { get; set; }
 
         [Column("UpdateUserId")]
         [Display(Name = "UpdateUserId")]
-        public string UpdateUserId { get; set; }
+        public int? UpdateUserId { get; set; }
     }
 }

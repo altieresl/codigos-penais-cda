@@ -23,7 +23,7 @@ namespace Data.RepositorioGenerico
         }
         public async Task Add(T Objeto)
         {
-            using (var db = new DbContext(_OptionsBuilder))
+            using (var db = new ContextBase(_OptionsBuilder))
             {
                 await db.Set<T>().AddAsync(Objeto);
                 await db.SaveChangesAsync();
@@ -32,7 +32,7 @@ namespace Data.RepositorioGenerico
 
         public async Task Delete(T Objeto)
         {
-            using (var db = new DbContext(_OptionsBuilder))
+            using (var db = new ContextBase(_OptionsBuilder))
             {
                 db.Set<T>().Remove(Objeto);
                 await db.SaveChangesAsync();
@@ -41,7 +41,7 @@ namespace Data.RepositorioGenerico
 
         public async Task<T> GetEntityById(int Id)
         {
-            using (var db = new DbContext(_OptionsBuilder))
+            using (var db = new ContextBase(_OptionsBuilder))
             {
                 return await db.Set<T>().FindAsync(Id);
             }
@@ -49,7 +49,7 @@ namespace Data.RepositorioGenerico
 
         public async Task<List<T>> List()
         {
-            using (var db = new DbContext(_OptionsBuilder))
+            using (var db = new ContextBase(_OptionsBuilder))
             {
                 return await db.Set<T>().ToListAsync();
             }
@@ -57,7 +57,7 @@ namespace Data.RepositorioGenerico
 
         public async Task Update(T Objeto)
         {
-            using (var db = new DbContext(_OptionsBuilder))
+            using (var db = new ContextBase(_OptionsBuilder))
             {
                 db.Set<T>().Update(Objeto);
                 await db.SaveChangesAsync();
